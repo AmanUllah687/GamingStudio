@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Gaming Studio.css">
+    <script src="Gaming Studio.js"></script>
+    <title>Gaming Studio</title>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="menu">
+            <div class="header"><img src="logo-header.png" class="logo" alt="">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-rectangle-xmark"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h1>A DREAM MAKING STUDIO</h1>
+        <div class="trapezoid">
+            <a>BUY THEME</a>
+        </div>
+    </section>
+    <section class="product-section">
+        <h2>FIND OUR GAMES ON APPSTORE</h2>
+        <svg class="svg-line" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 124.985 3.411"
+            enable-background="new 0 0 124.985 3.411" xml:space="preserve">
+            <polygon fill="#FFFFFF"
+                points="0,0 124.985,0 124.985,1.121 96.484,1.121 86.944,3.411 38.67,3.411 29.162,1.121 0,1.121 ">
+            </polygon>
+        </svg>
+        <div class="products">
+            <div class="Games-app"><img class="product-image" src="h2-custom-icon-img-1.png">
+                <h4>BLAZE LORDS</h4>
+                <img class="appstore-pic" src="h2-img-1.png" alt="">
+            </div>
+            <div class="Games-app"><img class="product-image" src="h2-custom-icon-img-2.png">
+                <h4>MOVING CASTLE</h4>
+                <img class="appstore-pic" src="h2-img-1.png" alt="">
+            </div>
+            <div class="Games-app"><img class="product-image" src="h2-custom-icon-img-3.png">
+                <h4>GREAT JOURNEY</h4>
+                <img class="appstore-pic" src="h2-img-1.png" alt="">
+            </div>
+            <div class="Games-app"><img class="product-image" src="h2-custom-icon-img-4.png">
+                <h4>SEA GOD</h4>
+                <img class="appstore-pic" src="h2-img-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <div class="Dream-pic-div">
+        </div>
+        <div class="Dream-content">
+            <h3>WE MAKE DREAMS<br>COME TO LIFE</h3>
+            <p class="info">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                quis enim.
+                Donec pede justo
+                pede, fringilla vel, aliquet parturient eget arcu. In enim justo, rhoncus ut, imperdiet a venenatis
+                vitae, justo. Dictum
+                felis molli pretium.</p>
+            <button class="info-button">LERN MORE</button>
+        </div>
+    </section>
+    <section class="slideshow-container">
+        <h1>USER REVIEWS</h1>
+        <div class="slideContainer">
+            <div class="Slide">
+                <q>Maecenas tempus, tellus eget condimentum rhoncus? Nam quam nunc, blandit vel, luctus pulvinar,
+                    hendrerit
+                    id,
+                    lorem. Maecenas nec odio et ante tincidunt tempus vitae sapien ut libero? Venenatis faucibus. Nullam
+                    quis
+                    ante. Etiam sit amet orci eget eros odio faucibus tincidunt. Duis leo ipsum.</q>
+                <div class="Caption">SUSAN HANSEN</div>
+                <P class="Caption-D">Level 80 Scout</P>
+            </div>
+            <div class="Slide">
+                <q>Maecenas tempus, tellus eget condimentum rhoncus? Nam quam nunc, blandit vel, luctus pulvinar,
+                    hendrerit
+                    id,
+                    lorem. Maecenas nec odio et ante tincidunt tempus vitae sapien ut libero? Venenatis faucibus. Nullam
+                    quis
+                    ante. Etiam sit amet orci eget eros odio faucibus tincidunt. Duis leo ipsum.</q>
+                <div class="Caption">SUSAN HANSEN</div>
+                <P class="Caption-D">Level 80 Scout</P>
+            </div>
+            <div class="Slide">
+                <q>Maecenas tempus, tellus eget condimentum rhoncus? Nam quam nunc, blandit vel, luctus pulvinar,
+                    hendrerit
+                    id,
+                    lorem. Maecenas nec odio et ante tincidunt tempus vitae sapien ut libero? Venenatis faucibus. Nullam
+                    quis
+                    ante.Etiam sit amet orci eget eros odio faucibus tincidunt. Duis leo ipsum.</q>
+                <div class="Caption">SUSAN HANSEN</div>
+                <P class="Caption-D">Level 80 Scout</P>
+            </div>
+            <a class="prevBtn">❮</a>
+            <a class="nextBtn">❯</a>
+        </div>
+    </section>
+    <script>
+        document.querySelector(".prevBtn").addEventListener("click", () => {
+            changeSlides(-1);
+        });
+        document.querySelector(".nextBtn").addEventListener("click", () => {
+            changeSlides(1);
+        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function changeSlides(n) {
+            showSlides((slideIndex += n));
+        }
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("Slide");
+            if (n > slides.length) {
+                slideIndex = 1;
+            } if (n < 1) {
+                slideIndex = slides.length;
+            }
+            Array.from(slides).forEach(item => (item.style.display = "none"));
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <section class="Roboo">
+        <div class="Roboot-cave">
+            <h2 class="Roboo-heading">WELCOME TO ROBOT CAVE!</h2>
+            <p>Etiam rhoncus, maecenas tempus tellus eget dolor condimentum rhoncus, sem quam semper libero amet,
+                adipiscing sem neque sed ipsum. Lorem ipsum dolor sit.</p>
+            <button>EXPLORE</button>
+        </div>
+        <div class="Roboot-pic">
+            <img class="Roboot" src="h2-img-3.png" alt="">
+        </div>
+    </section>
+    <section class="video-section">
+        <img class="duck-image" src="h2-video-img-1.jpg" alt="">
+    </section>
+    <section class="footer-section">
+        <div class="fooer-trapezoid">
+            <nav class="footer-nav">
+                <ul class="footer-links">
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>BLOG</li>
+                    <li>SHOP</li>
+                    <li>CONTACT US</li>
+                    <li>PORTFOLIO</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>
